@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing: Data Redundancy Removal System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Data Redundancy Removal Portal</h1>
+            <p>Task 1 Component — Real-time validation, classification, and unique ingestion pipelines.</p>
+            <div class="hero-pill-row">
+                <span class="hero-pill">✨ Zero Redundancy</span>
+                <span class="hero-pill accent">⚡ Rapid Ingestion</span>
+                <span class="hero-pill status-live">Live</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="grid">
+            <section class="card glass-card">
+                <h2>Data Entry Form</h2>
+                <form id="ingestionForm">
+                    <div class="form-group">
+                        <label for="email">User Email Address</label>
+                        <input type="email" id="email" placeholder="example@domain.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="+1234567890" required>
+                    </div>
+                    <button type="submit" class="btn">Process & Append Entry</button>
+                </form>
+                
+                <div id="logMessage" class="log-message hidden"><span id="statusBadge" class="status-badge"></span><span id="statusText"></span></div>
+            </section>
+
+            <section class="card">
+                <h2>Verified Database Storage Summary</h2>
+                <div class="table-actions">
+                    <input id="tableSearch" placeholder="Search email or phone..." />
+                    <div id="loadingSpinner" class="spinner hidden" aria-hidden="true"></div>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>System ID</th>
+                                <th>Verified Email</th>
+                                <th>Verified Phone Number</th>
+                                <th>Unique System Hash Signature</th>
+                            </tr>
+                        </thead>
+                        <tbody id="databaseTableBody">
+                            </tbody>
+                    </table>
+                </div>
+            </section>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
